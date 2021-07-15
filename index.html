@@ -4,9 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <title>Marsden Jacques' Github</title>
 </head>
-<body>
-    <a href='/2d-game-of-life/'>2d Conway's Game of Life</a>
+<body style = 'min-height: 100vh; margin: 0; padding: 25px 25px 25px 25px; 
+background: linear-gradient(rgba(255,255,255,.25), rgba(255,255,255,.25)),url(assets/kyoto1.jpg); background-size: cover; box-sizing: border-box;'>
+    <section id='main' style = 'width: 100%; min-height: 100%; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; margin-top: auto;'>
+        <h1 style='width: 100%; text-align: center; '>Welcome to Marsden's Github Page!</h1>
+        <h2 style='display:flex; flex-direction:row; align-items: center;'>Background music: <audio id='bgm' src="assets/bgm1.mp3" style='margin-left: 20px;' controls loop>
+            <p>If you are reading this, it is because your browser does not support the audio element.</p>
+        </audio></h2>
+        <script>
+            var audio = document.getElementById('bgm');
+            audio.volume = 0.5;
+          </script>
+        <div id = 'links-container' style = 'display: flex; flex-direction: column;'>
+            <h2>Currently hosted projects</h2>
+            <ul>
+                <h3>Games/oddities</h3>
+                <li><a href='/2d-game-of-life/'>2d Conway's Game of Life</a></li>
+                <h3>Personal or commissioned websites</h3>
+                <li><a href='marsdensqlnotesapp.netlify.app'>Todo list and notes web app</a></li>
+                <li><a href='https://hiroshimaartcenter.netlify.app/'>Hiroshima Art Center home page</a></li>
+            </ul>
+        </div>
+        <div id='about-me-container' style='width:100%'>
+            <h2>About Me</h2>
+            <p>I write code sometimes</p>
+            <div id ='img container' style='display:flex; flex-direction: row; justify-content: space-around; align-items: center; width: 100%;'>
+                <img src = 'assets/me1.jpg' alt='me in a hat' width='500' height='667'/>
+                <img src = 'assets/me2.jpg' alt='me without a hat and outside' width='500' height='809'/>
+                <img src = 'assets/megoats.jpg' alt='me with goats' width='500' height='435'/>
+            </div>
+        </div>
+        <p>Music source: Late Night Radio by Kevin MacLeod <br/>
+            Link: https://incompetech.filmmusic.io/song/7613-late-night-radio <br/>
+            License: https://filmmusic.io/standard-license</p>
+    </section>
 </body>
 </html>
