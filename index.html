@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Marsden Jacques' Github</title>
 </head>
 <body style = 'min-height: 100vh; margin: 0; padding: 25px 25px 25px 25px; 
 background: linear-gradient(rgba(255,255,255,.25), rgba(255,255,255,.25)),url(assets/kyoto1.jpg); background-size: cover; box-sizing: border-box;'>
-    <section id='main' style = 'width: 100%; min-height: 100%; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; margin-top: auto;'>
+    <section id='main' style = 'min-height: 100%; flex-direction: column; align-items: flex-start; justify-content: center; margin-top: auto;'>
         <h1 style='width: 100%; text-align: center; '>Welcome to Marsden's Github Page!</h1>
         <h2 style='display:flex; flex-direction:row; align-items: center;'>Background music: <audio id='bgm' src="assets/bgm1.mp3" style='margin-left: 20px;' controls loop>
             <p>If you are reading this, it is because your browser does not support the audio element.</p>
@@ -17,7 +18,7 @@ background: linear-gradient(rgba(255,255,255,.25), rgba(255,255,255,.25)),url(as
             var audio = document.getElementById('bgm');
             audio.volume = 0.5;
           </script>
-        <div id = 'links-container' style = 'display: flex; flex-direction: column;'>
+        <div id = 'links-container' style = 'flex-direction: column;'>
             <h2>Currently hosted projects</h2>
             <ul>
                 <h3>Games/oddities</h3>
@@ -27,10 +28,10 @@ background: linear-gradient(rgba(255,255,255,.25), rgba(255,255,255,.25)),url(as
                 <li><a href='https://hiroshimaartcenter.netlify.app/'>Hiroshima Art Center home page</a></li>
             </ul>
         </div>
-        <div id='about-me-container' style='width:100%'>
+        <div id='about-me-container' class='container' style='flex-direction: column;'>
             <h2>About Me</h2>
             <p>I write code sometimes</p>
-            <div id ='img container' style='display:flex; flex-direction: row; justify-content: space-around; align-items: center; width: 100%;'>
+            <div id ='img container' class='container' style='flex-direction: row; justify-content: space-around; align-items: center;flex-wrap: wrap;'>
                 <img src = 'assets/me1.jpg' alt='me in a hat' width='500' height='667'/>
                 <img src = 'assets/me2.jpg' alt='me without a hat and outside' width='500' height='809'/>
                 <img src = 'assets/megoats.jpg' alt='me with goats' width='500' height='435'/>
